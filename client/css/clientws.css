@@ -1,0 +1,277 @@
+.textChat {
+	position: relative;
+}
+
+.textChat .hidden {
+	display: none;
+}
+
+.textChat button {
+	width: 120px;
+	height: 30px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.textChat input, .textChat textarea {
+	height: 30px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.textChat textarea { 
+	resize: none; 
+}
+
+/**/
+
+.textChat .messagingOptions {
+	position: absolute;
+	top: 430px;
+	left: 0px;
+	width: 600px;
+}
+
+.textChat .messagingOptions .textToSend {
+	width: 450px;
+	left: 30px;
+	top: 0px;
+	position: absolute;
+}
+
+.textChat .messagingOptions .sssmile {
+	width: 19px;
+	height: 19px;
+	padding: 5px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	cursor: pointer;
+}
+
+.textChat .messagingOptions .sendTextButton {
+	left: 480px;
+	position: absolute;
+	top: 0px;
+}
+
+.textChat .messagingOptions .smileSelectButton {
+	width: 19px;
+	height: 19px;
+	background: url(../img/smile.png);
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	opacity: 0.5;
+}
+
+.textChat .messagingOptions .smileSelectButton:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.textChat .messagingOptions .smileSelectButton.disabled {
+	cursor: default;
+}
+
+.textChat .messagingOptions .smileSelectButton.disabled:hover {
+	opacity: 0.5;
+}
+
+.textChat .messagingOptions .smileSelector {
+	top: 30px;
+	position: absolute;
+	left: 0px;
+	width: 600px;
+	height: 100px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: none;
+}
+
+/**/
+
+.textChat .connectOptions {
+	position: absolute;
+	width: 600px;
+	height: 30px;
+	top: 0px;
+	left: 0px;
+}
+
+.textChat .connectOptions .clientID {
+	position: absolute;
+	left: 30px;
+	height: 30px;
+	width: 450px;
+}
+
+.textChat .connectOptions .connectButton {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 30px;
+	width: 120px;
+}
+
+.textChat .connectOptions .settingsButton {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	background: url(../img/icon_settings.png) 5px 5px no-repeat;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.textChat .connectOptions .settingsButton:hover {
+	opacity: 0.8;
+}
+
+.textChat .chatLog,
+.textChat .users {
+	display: block;
+	position: absolute;
+	top: 30px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 400px;
+	overflow: scroll;
+}
+
+/*.textChat .chatLog *,
+.textChat .users * {
+	min-height: 20px;
+}*/
+
+.textChat .chatLog {	
+	left: 0px;
+	width: 480px;
+}
+
+.textChat .chatLog .logMessage {
+	color: blue;
+}
+
+.textChat .chatLog .logPrivate {
+	color: red;
+}
+
+.textChat .chatLog .logName {
+	color: green;
+}
+
+.textChat .chatLog .logServerName {
+	color: red;
+}
+
+.textChat .chatLog .logTime {
+	color: gray;
+}
+
+.textChat .chatLog .clsmile {
+	width: 19px;
+	height: 19px;
+	display: inline-block;
+}
+
+.textChat .users {
+	left: 480px;
+	width: 120px;
+	margin: 0px;
+	list-style: none;
+	padding: 0;
+}
+
+.textChat .users .usersName {
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+/**/
+.textChat .userVideos {
+	position: absolute;
+	top: 0px;
+	left: 600px;
+	width: 600px;
+	height: 460px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.textChat .userVideos .videoBox {
+	width: 290px;
+	height: 210px;
+	border: 1px dashed gray;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
+}
+
+.textChat .userVideos .videoBox video,
+.textChat .userVideos .videoBox audio{
+	height: 100%;
+	width: 100%;
+}
+
+.textChat .userVideos .videoBox .title {
+	position: absolute;
+	height: 20px;
+	width: 100%;
+	top: 0;
+	opacity: 0.3;
+	background: white;
+	text-align: center;
+}
+.textChat .userVideos .videoBox .title:hover {
+	opacity: 0.6;
+	
+}
+
+.textChat .userVideos .videoBox .controls {
+	position: absolute;
+	height: 30px;
+	width: 100%;
+	bottom: 0;
+	opacity: 0.7;
+	background: white;
+	text-align: center;
+}
+
+.textChat .userVideos .videoBox .controls .block {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.textChat .userVideos .videoBox .controls .close {
+	background: url(../img/video-close.png) 0 0 no-repeat;
+}
+
+.textChat .userVideos .videoBox .controls .pause {
+	background: url(../img/video-pause.png) 0 0 no-repeat;
+}
+.textChat .userVideos .videoBox .controls .pause.paused {
+	background: url(../img/video-play.png) 0 0 no-repeat;
+}
+
+/* context menus */
+
+ul.stmctxmenu {
+	position: absolute;
+	list-style: none;
+	border-radius: 5px;
+	box-shadow: 0 0 5px black;
+	border: 1px solid gray;
+}
+
+ul.stmctxmenu > li:not(:last-of-type) {
+	border-bottom: 1px solid gray;
+}

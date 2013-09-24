@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<title>Web chat</title>
+		<link id="favicon" rel="shortcut icon" type="image/png" href="favicon.png" />
+		<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+		<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script type="text/javascript" src="js/jssip-0.3.0.js"></script>
+
+		<script type="text/javascript" src="js/hash.js"></script>
+		<script type="text/javascript" src="js/clientsip.js"></script>
+
+	</head>
+	<body>
+
+	
+	
+	
+	
+		<style>
+		.sipcallinface > * {
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		.sipcallinface > a {
+			line-height: 30px;
+			text-align: center;
+		}
+		</style>
+		<div class="sipcallinface draggable" >
+			<input value="sip:102@192.168.2.161" type="text" id="sipuri" class="sipinput" style="z-index: 200; position: absolute; width: 400px; height: 30px; top: 300px; left: 0px;" />
+			<input value="12345" type="text" id="sippasswd" class="sipinput" style="z-index: 200; position: absolute; width: 400px; height: 30px; top: 300px; left: 400px;"/>
+			<a href="javascript:void(0)" id="sipconnect" style="z-index: 200; position: absolute; width: 400px; height: 30px; top: 330px; left: 0;" >Connect</a>
+			<a href="javascript:void(0)" id="sipcall" style="z-index: 200; position: absolute; width: 70px; height: 30px; top: 330px; left: 400px;" >Call</a>
+			<input title="enable video" type="checkbox" id="videoenabled" class="sipinput" style="z-index: 200; position: absolute; width: 30px; height: 30px; top: 330px; left: 470px;" />
+			<input value="sip:101@192.168.2.161" type="text" id="sipcallto" class="sipinput" style="z-index: 200; position: absolute; width: 300px; height: 30px; top: 330px; left: 500px;" />
+			<video id="my-video" class="sipvid" style="z-index: 200; position: absolute; width: 400px; height: 300px; border: 1px solid red; top: 0; left: 0px;" autoplay ></video>
+			<video id="peer-video" class="sipvid" style="z-index: 200; position: absolute; width: 400px; height: 300px; border: 1px solid red; top: 0; left: 400px;" autoplay></video>
+		</div>
+		
+		
+		
+	</body>
+</html>
